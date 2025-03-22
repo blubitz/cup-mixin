@@ -31,5 +31,12 @@ export class Mixin {
     for (const key of Object.keys(target[mixinName])) {
       target[key] = target[mixinName][key]
     }
+
+    // Expose static methods
+    for (const key of Object.getOwnPropertyNames(target[mixinName].constructor)) {
+      if (!['length', 'name', 'prototype'].includes(key)) {
+        target.constructor[key] = target[mixinName].constructor[key]
+      }
+    }
   }
 }

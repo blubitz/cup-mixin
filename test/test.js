@@ -32,6 +32,10 @@ class Test extends Mixin {
   set val(num) {
     this.#privateVar = num
   }
+
+  static staticMethod() {
+    return 'hi'
+  }
 }
 
 class MyClass {
@@ -60,4 +64,7 @@ it('should mix in getters', () => {
 it('should mix in setters', () => {
   obj.val = 42
   assert.equal(obj.privateVar(), 42)
+})
+it('should mix in static methods', () => {
+  assert.equal(MyClass.staticMethod(), 'hi')
 })
