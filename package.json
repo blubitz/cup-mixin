@@ -1,0 +1,31 @@
+{
+  "name": "cup-mixin",
+  "version": "1.0.0",
+  "description": "Multiple inheritance in JavaScript",
+  "keywords": [
+    "extends",
+    "mixin",
+    "inheritance",
+    "class"
+  ],
+  "homepage": "https://github.com/blubitz/cup-mixin#readme",
+  "bugs": {
+    "url": "https://github.com/blubitz/cup-mixin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blubitz/cup-mixin.git"
+  },
+  "license": "MPL-2.0",
+  "author": "blubitz",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "release": "npm run test && release-it"
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0",
+    "release-it": "^18.1.2"
+  }
+}
