@@ -10,7 +10,7 @@ npm i cup-mixin
 
 ## Motivation
 
-![Files](https://raw.githubusercontent.com/blubitz/console-in-browser/main/images/dread_of_inheritance.png)
+![Files](https://raw.githubusercontent.com/blubitz/cup-mixin/main/images/dread_of_inheritance.png)
 
 ## Usage
 
